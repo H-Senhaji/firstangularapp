@@ -1,7 +1,14 @@
 /* AppComponent's private CSS styles */
-h1 {
-    font-size: 1.2em;
+header {
+  text-align: center;
     margin-bottom: 0;
+    color: #000000;
+    font-weight: bold;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+    color: #c78d56;
   }
   h2 {
     font-size: 2em;
@@ -17,7 +24,7 @@ h1 {
     border-radius: 4px;
   }
   nav a:visited, a:link {
-    color: #334953;
+    color: #c78d56;
   }
   nav a:hover {
     color: #039be5;
@@ -26,3 +33,4 @@ h1 {
   nav a.active {
     color: #039be5;
   }
+  

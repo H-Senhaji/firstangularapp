@@ -1,5 +1,4 @@
-/* HeroesComponent's private CSS styles
-.heroes {
+/* .heroes {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
@@ -68,6 +67,6 @@
     position: relative;
     left: 194px;
     top: -32px;
-    background-color: gray !important;
+    background-color: rgb(245, 140, 140) !important;
     color: white;
   } */

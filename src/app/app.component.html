@@ -1,7 +1,19 @@
-<h1>{{title}}</h1>
-<nav>
-    <button type="button" class="btn btn-primary btn-lg" routerLink="/dashboard">Dashboard</button>
-  <button type="button" class="btn btn-primary btn-lg"  routerLink="/heroes">Budgetlist</button>
-</nav>
+<div class="container-fluid">
+    <header role="banner">
+    <img id="logo-main" src="https://static.vecteezy.com/system/resources/previews/000/599/216/non_2x/bitcoin-logo-vector-template.jpg" width="200" alt="Logo Thing main logo">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <h5 class="my-0 mr-md-auto font-weight-normal">{{title}}</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2 text-dark" routerLink="/dashboard">Home</a>
+          <a class="p-2 text-dark" routerLink="/heroes">Budgetlist</a>
+
+          <a class="p-2 text-dark" href="#">Graphs</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="#">Sign up</a>
+      </div>
+</header>
 <router-outlet></router-outlet>
 <app-messages></app-messages>
+
+
+

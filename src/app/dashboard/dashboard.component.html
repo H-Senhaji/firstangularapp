@@ -1,19 +1,60 @@
-<h3>Budget Planning</h3>
-<h4>Top 4</h4>
-<div class="grid grid-pad">
-  <a *ngFor="let hero of heroes" class="col-1-4"
-      routerLink="/detail/{{hero.id}}">
-      <div class="card" style="width: 18rem;">
-          <img src={{hero.url}}
-          class="card-img-top" alt="eten">
-          <h5>{{hero.saldo}}</h5>
-          <!-- <a *ngFor="let hero of heroes" class="col-1-4"
-            routerLink="/detail/{{hero.id}}"> -->
-          <div class="module hero">
-            <h4>{{hero.name}}</h4>
-          </div>
-      </div>
-  </a>
-</div>
+<!-- WERKEND FIRST KAARTJES -->
+   <!-- <div class="grid grid-pad">
+    <a *ngFor="let hero of heroes" class="col-1-4"
+        routerLink="/detail/{{hero.id}}">
+        <div class="card" style="width: 18rem;">
+            <img src={{hero.url}}
+            class="card-img-top" alt="eten">
+            <h5>{{hero.saldo}}</h5>
+            <!-- <a *ngFor="let hero of heroes" class="col-1-4"
+              routerLink="/detail/{{hero.id}}"> -->
+            <!-- <div class="module hero">
+              <h4>{{hero.name}}</h4>
+            </div>
+        </div>
+    </a>
+  </div>  --> 
 
+<div class="container">
+    <a *ngFor="let hero of heroes" class="card-body"
+    routerLink="/detail/{{hero.id}}">
+      <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">{{hero.name}}</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">{{hero.saldo}} <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+            
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Click for details</button>
+            </div>
+          </div>    
+          </div>
+          </a>
+          
+
+
+
+
+              
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+        
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+      
+        </div>
+      </div>
 
