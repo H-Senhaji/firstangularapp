@@ -1,14 +1,19 @@
 <div *ngIf="hero">
-        <h2>{{hero.name | uppercase}} Details</h2>
-        <h3>{{hero.saldo}}</h3>
+        <h2>{{hero.name}}</h2>
+        <h3>€{{hero.saldo}}</h3>
         <!-- zelf kunnen aanpassen door edit -->
         <div>
-          <label>name:
+          <label>Category:
             <input [(ngModel)]="hero.name" placeholder="name"/>
           </label>
         </div>
+        <div>
+            <label>Saldo:
+              <input [(ngModel)]="hero.saldo" placeholder="saldo"/>
+            </label>
+          </div>
         <button class="btn btn-primary btn-lg" (click)="goBack()">go back</button>
-        / 
+        <div>
         <button class="btn btn-primary btn-lg" (click)="save()">save</button>
       </div>
-
+    </div>
