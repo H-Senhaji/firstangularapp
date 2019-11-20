@@ -8,7 +8,7 @@
   .heroes li {
     position: relative;
     cursor: pointer;
-    background-color: #EEE;
+    background-color: rgb(236, 161, 48);
     margin: .5em;
     padding: .3em 0;
     height: 1.6em;
@@ -30,7 +30,7 @@
   }
   
   .heroes a:hover {
-    color:#607D8B;
+    color:rgb(235, 152, 75);
   }
   
   .heroes .badge {
