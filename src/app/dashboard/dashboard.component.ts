@@ -9,13 +9,28 @@ import { HeroService } from '../hero.service';
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
+  btc: number;
 
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroService) {
+    this.btc = 1;
+   }
 
   ngOnInit() {
     this.getHeroes();
+    this.test();
   }
 
+  test(){
+    fetch('https://blockchain.info/tobtc?currency=EUR&value=1', {
+     method: 'GET'
+ })
+  .then(response => response.json())
+   .then(data => {
+     console.log(data)
+      this.btc = data;
+    })
+   .catch(error => console.error(error))
+   }
 
   //TOPVIERHERO'S
   getHeroes(): void {
