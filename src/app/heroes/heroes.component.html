@@ -1,7 +1,7 @@
 <h2>Overview</h2>
 
 <div>
-  <label>Name:
+  <label>:
     <input #heroName />
   </label>
   <!-- (click) passes input value to add() and then clears the input -->
@@ -10,12 +10,24 @@
   </button>
 </div>
 
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </a>
-    <button class="delete" title="delete hero"
-      (click)="delete(hero)">x</button>
-  </li>
-</ul>
+  <ul *ngFor="let hero of heroes"  class="list-group">
+   <li class="row">
+      <a href='#' routerLink="/detail/{{hero.id}}" class="col-10 list-group-item">
+  {{hero.name}}  
+  </a>
+    <button type="button" class="btn btn-danger col-2" title="delete hero"
+      (click)="delete(hero)">Delete account</button>
+    </li>
+  </ul>
+
+<!-- <ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
+      <button class="delete" title="delete hero"
+        (click)="delete(hero)">x</button>
+    </li>
+  </ul>
+   -->
+  

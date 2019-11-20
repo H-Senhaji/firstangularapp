@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { apikey } from '../apikey'
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
@@ -15,8 +15,22 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit() {
     this.getHeroes();
+    this.test();
+
   }
 
+  test(){
+   fetch('https://blockchain.info/tobtc?currency=USD&value=500', {
+    method: 'GET'
+})
+ .then(response => response.json())
+  .then(data => {
+    console.log(data)
+  })
+  .catch(error => console.error(error))
+  }
+
+ 
   getHeroes(): void {
     this.heroService.getHeroes()
     .subscribe(heroes => this.heroes = heroes);
