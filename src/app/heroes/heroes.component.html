@@ -1,27 +1,38 @@
-
-
 <div>
   <div>
     <div>
-<div>  <ul *ngFor="let hero of heroes"  class="list-group" > 
-   <li class="row" >
-      <a href='#'  routerLink="/detail/{{hero.id}}"  class="col-4 list-group-item">
-  {{hero.name}}  
-  </a>
-    <button type="button" class="btn btn-outline-danger" title="delete hero"
-      (click)="delete(hero)">Delete</button>
-    </li>
-  </ul>
-</div>
-</div>
+      <div>
+        <ul *ngFor="let hero of heroes" class="list-group">
+          <li class="row">
+            <a
+              href="#"
+              routerLink="/detail/{{ hero.id }}"
+              class="col-4 list-group-item"
+            >
+              {{ hero.name }}
+            </a>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              title="delete hero"
+              (click)="delete(hero)"
+            >
+              Delete
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<div class="float-right"> 
-
-    <input #heroName />
-  <button type="button"  class="btn btn-outline-success" (click)="add(heroName.value); heroName.value=''" >
- Add new
-  </button>
+    <div class="float-right">
+      <input #heroName />
+      <button
+        type="button"
+        class="btn btn-outline-success"
+        (click)="add(heroName.value); heroName.value = ''"
+      >
+        Add new
+      </button>
+    </div>
+  </div>
 </div>
-</div>
-
-
