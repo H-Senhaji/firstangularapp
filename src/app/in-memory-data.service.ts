@@ -8,29 +8,22 @@ import { Injectable } from "@angular/core";
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 11, name: "Remaining",
-    saldo: 800 },
+      { id: 11, name: "Remaining", saldo: 800, date: 10-2019 },
       {
         id: 12,
-        name: "Clothing",
-        url:
-          "https://naambordencentrale.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/i/pictogram-garderobe_1.png",
+        name: "Savings",
         saldo: 500
-        },
+      },
       {
         id: 15,
-        name: "Household",
-        url:
-          "https://naambordencentrale.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/4/9/4939_23_gen_a_2008.jpg",
-        saldo: 130
-        },
+        name: "Fixed Charges",
+        saldo: 1100
+      },
       {
         id: 16,
         name: "Food",
-        url:
-          "https://naambordencentrale.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/i/pictogram-restaurant.png",
         saldo: 400
-        }
+      }
     ];
     return { heroes };
   }

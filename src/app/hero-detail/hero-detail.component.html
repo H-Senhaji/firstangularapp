@@ -1,16 +1,25 @@
 <div *ngIf="hero">
         <h2>{{hero.name}}</h2>
         <h3>€{{hero.saldo}}</h3>
-        <h4>C{{hero.saldo * saldo}}</h4>
+        <h4>C{{hero.saldo * btc}}</h4>
+        <!-- <h5>{{hero.date}}</h5> -->
+       <div> 2019-02-01 - €213,-</div>
+        <div>02-03-2019 - €500,-</div>
+        <div>02-04-2019 - €600,-</div>
 
         <div>
           <label>Category:
             <input [(ngModel)]="hero.name" placeholder="name"/>
           </label>
         </div>
-        <div>
+        <div>   
             <label>Saldo:
               <input [(ngModel)]="hero.saldo" placeholder="saldo"/>
+            </label>
+          </div>
+          <div>
+            <label>Date:
+              <input [(ngModel)]="hero.date" placeholder="date"/>
             </label>
           </div>
         <button class="btn btn-primary btn-lg" (click)="goBack()">go back</button>
