@@ -1,3 +1,28 @@
+Spend(in) coins 
+
+App is not finished yet
+Use this app to keep track of your spending/saving habits and the worth of those Euros in Bitcoin (at that current moment). It's nice to get familiair with the fluctuating coin and keep track of what your estimations were the last months. With the future features you can do a lot more (see future features in this .md)
+
+
+
+
+
+Hero-names should be changed, these names are there because of the Angular tutorial that I started this project with.
+
+Data can not yet be saved into a database 
+
+Future features:
+Graphs that will show the history of spending/saving habit in Euros and Bitcoins 
+Spending/saving categories ranked by date in details
+Spending saving categories ranked by top expenses 
+Estimation for yourself to see how you estimated your spending habits in euros and the worth of the coin 
+
+Maybe:
+Linked to your bank account that updates current saldo to app, and shows what the coin is worth at the moment.
+
+
+
+
 # AngApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
