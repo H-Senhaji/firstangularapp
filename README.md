@@ -4,12 +4,9 @@ App is not finished yet
 Use this app to keep track of your spending/saving habits and the worth of those Euros in Bitcoin (at that current moment). It's nice to get familiair with the fluctuating coin and keep track of what your estimations were the last months. With the future features you can do a lot more (see future features in this .md)
 
 
+Hackaton -> app made in two days 
 
 
-
-Hero-names should be changed, these names are there because of the Angular tutorial that I started this project with.
-
-Data can not yet be saved into a database 
 
 Future features:
 Graphs that will show the history of spending/saving habit in Euros and Bitcoins 
